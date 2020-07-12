@@ -1,5 +1,5 @@
-@extends('default')
+@extends('layout.app')
 
 @section('content')
-    {{"Getting started with Blade Template"}}
+    <h1>{{$subtitle}}</h1>
 @stop

@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('motor', function ($jenis=Sport) {
+Route::get('motor', function ($jenis='Sport') {
     return 'Motor dengan jenis '.$jenis;
 });
 
 Route::get('book/{jenis}', 'BookController@viewJudul');
 
-Route::get('bladeTest', 'HomeController@index');
+Route::get('home', 'HomeController@index');

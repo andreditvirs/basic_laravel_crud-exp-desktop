@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
-        return View('index');
+        $subtitle = "Sub Title";
+        return View('index', compact('subtitle'));
     }
 }
